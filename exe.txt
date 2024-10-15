@@ -1,0 +1,13 @@
+Testando o Sistema
+Instalações Necessárias:
+
+Instale Flask, Flask-SQLAlchemy, PyMySQL e PyJWT:
+bash
+Copiar código
+pip install Flask Flask-SQLAlchemy PyMySQL PyJWT
+Rodar o Servidor:
+
+Execute o comando python app.py para iniciar o servidor.
+Acessar o Sistema:
+
+Acesse http://localhost:5000/login.html no seu navegador.

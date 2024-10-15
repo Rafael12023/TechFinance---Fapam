@@ -1,0 +1,13 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    password VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE transactions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    amount DECIMAL(10, 2) NOT NULL,
+    date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
